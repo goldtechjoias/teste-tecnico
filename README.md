@@ -26,6 +26,7 @@
 
 ### Mock visual (exemplo bem simples):
 
+```
 [ Nome : _____________ ]
 [ Email : _____________ ]
 [ Data : ___/___/____ ]
@@ -34,6 +35,7 @@
 --- Lista de Agendamentos ---
 • João - joao@email.com - 2025-04-10
 • Maria - maria@email.com - 2025-04-12
+```
 
 # Objetivo pro candidato no back:
 
