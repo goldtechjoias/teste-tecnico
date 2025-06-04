@@ -59,7 +59,7 @@ a pasta /components/ui ja tem todos os componentes do shadcnui para evitar perca
 ...demais agendamentos, minimo 5
 ```
 
-# Objetivo pro candidato no back:
+## BACK-END
 
 ### Implementar as rotas de agendamento:
 
@@ -91,9 +91,9 @@ a pasta /components/ui ja tem todos os componentes do shadcnui para evitar perca
 
 ## Tarefa prática para o candidato (exemplo):
 
-- O prisma ja esta com a migrate criada, precisa apenas implementa-la
-- O Banco é sqlite
-- Validar dados recebidos
-- Implementa rotas de POST e salvar os dados no banco /appointments/create
-- Implementa rotas de GET /appointments/all
-- A estrutura de pastas é uma SUGESTÃO, pois trabalhamos dessa forma.
+1. O prisma ja esta com a migrate criada, precisa apenas implementa-la
+2. O Banco é sqlite
+3. Validar dados recebidos
+4. Implementa rotas de POST e salvar os dados no banco /appointments/create
+5. Implementa rotas de GET /appointments/all
+6. A estrutura de pastas é uma SUGESTÃO, pois trabalhamos dessa forma.
