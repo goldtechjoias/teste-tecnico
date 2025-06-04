@@ -91,6 +91,8 @@ a pasta /components/ui ja tem todos os componentes do shadcnui para evitar perca
 
 ## Tarefa prática para o candidato (exemplo):
 
+- O prisma ja esta com a migrate criada, precisa apenas implementa-la
+- O Banco é sqlite
 - Validar dados recebidos
 - Implementa rotas de POST e salvar os dados no banco /appointments/create
 - Implementa rotas de GET /appointments/all
