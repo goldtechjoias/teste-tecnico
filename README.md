@@ -97,3 +97,105 @@ a pasta /components/ui ja tem todos os componentes do shadcnui para evitar perca
 4. Implementa rotas de POST e salvar os dados no banco /appointments/create
 5. Implementa rotas de GET /appointments/all
 6. A estrutura de pastas é uma SUGESTÃO, pois trabalhamos dessa forma.
+
+---
+
+
+#  Teste Técnico - Sistema de Agendamentos | Gold Tech Joias
+
+
+---
+
+##  Requisitos Atendidos
+
+###  Back-end (`api-teste-tecnico/`)
+Estrutura orientada a objetos (Controller, Service, Repository, Entity)
+Banco de dados SQLite com Prisma ORM
+Validação de dados usando **Zod**
+Rota `POST /appointments/create` para criação de agendamento
+Rota `GET /appointments/all` para listagem de agendamentos
+Middleware de CORS com configuração de origem
+Separação de responsabilidades seguindo boas práticas de arquitetura
+
+### 🎨 Front-end (`next-teste-tecnico/`)
+Framework **Next.js 14+** (App Router)
+Estilização com **TailwindCSS**
+Componentes visuais utilizando **ShadCN UI**
+Formulário com:
+Campo de **nome**, **email** e **data**
+Controle via **React Hook Form**
+Validação com **Zod**
+Submissão via **React Query**
+Tela separada de listagem de agendamentos com dados da API
+Mensagens de erro/sucesso e controle de estado no frontend
+
+---
+
+##  Estrutura de Diretórios
+
+```bash
+teste-tecnico/
+├── api-teste-tecnico/         # Backend (Node + Prisma)
+└── next-teste-tecnico/        # Frontend (Next.js + Tailwind + React Query)
+````
+
+---
+
+## Como Executar Localmente
+
+###  Back-end
+
+```bash
+cd api-teste-tecnico
+npm install
+npx prisma migrate dev
+npm run dev
+```
+
+Servidor disponível em: [http://localhost:3333](http://localhost:3333)
+
+---
+
+###  Front-end
+
+```bash
+cd next-teste-tecnico
+npm install
+npm run dev
+```
+
+Aplicação disponível em: [http://localhost:3000](http://localhost:3000)
+
+---
+
+##  Rotas Implementadas
+
+### Backend
+
+* `POST /appointments/create` → cria um novo agendamento
+* `GET /appointments/all` → retorna todos os agendamentos
+
+---
+
+##  Telas
+
+###  Página de Agendamento
+
+* URL: `/novo-agendamento`
+* Função: criar um novo agendamento com validação
+* Estado de carregamento, erro e sucesso
+
+###  Página de Listagem
+
+* URL: `/agendamentos`
+* Função: exibir todos os agendamentos cadastrados com formatação de data
+
+---
+
+##  Testado com:
+
+* Postman para rotas da API
+* Navegador para fluxo completo: formulário + listagem
+
+
+

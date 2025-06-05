@@ -1,6 +1,8 @@
 import bodyParser from "body-parser";
 import cors from "cors";
 import express from "express";
+import { appointmentRoutes } from './appointments/appointments.routes'
+
 
 const app = express();
 
@@ -24,6 +26,9 @@ app.use((err, req, res, next) => {
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use("/appointments", appointmentRoutes)
+
 
 app.listen(3333, () => {
   console.info(`Server started successfully at port 3333`);
